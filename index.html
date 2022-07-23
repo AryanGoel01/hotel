@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowfall resort</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Nunito', sans-serif;
+            background: url('img/hotel.jpg');
+            background-size: 1525px;
+            height: 1500px;
+            background-repeat: no-repeat;
+        }
+
+        .left {
+            /* border: 5px solid rgb(142, 222, 142); */
+            display: inline-block;
+            margin: 40px 0px 30px 246px;
+        }
+
+        .left a {
+            text-decoration: none;
+            font-size: 28px;
+            font-weight: bold;
+            color: #bec56c;
+
+        }
+
+        .left a small {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 10px;
+            font-weight: 800;
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: inline-block;
+            margin: 18px 41px 18px 290px;
+            width: 53%;
+            position: relative;
+            font-weight: 700;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar ul {
+            font-size: 14px;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 28px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.Active {
+            color: white;
+            border: 0px solid #07edda;
+            background-color: #07edda;
+            border-radius: 10px;
+        }
+
+        .right {
+            border: 2px solid blue;
+            display: inline-block;
+            position: absolute;
+            right: 30px;
+            top: 617px;
+            background-color: white;
+            position: fixed;
+        }
+
+        .right a {
+            text-decoration: none;
+        }
+
+        .container {
+            /* border: 2px solid red; */
+            margin-top: 178px;
+            margin-left: 476px;
+            font-size: 70px;
+            box-sizing: border-box;
+            text-align: center;
+            display: inline-block;
+            font-family: 'Old Standard TT', serif;
+            color: #a55f07;
+            /* margin-right: 342px;
+        margin-left: 415px; */
+        }
+
+        .container small {
+            display: block;
+            font-size: 30px
+        }
+
+        .head {
+            border: 2px solid white;
+            margin-top: 491px;
+            width: 50%;
+            height: 80px;
+            margin-left: 390px;
+            background: white;
+            border-radius: 20px;
+            display: inline-block;
+
+        }
+
+        .head div {
+            display: inline-block;
+            font-family: 'Caveat', cursive;
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .search {
+            padding-left: 30px;
+            padding-top: 30px;
+            height: 20px;
+        }
+
+        .input1 {
+            padding-left: 30px;
+            padding-top: 16px;
+
+        }
+
+        .input2 {
+            padding-left: 30px;
+        }
+
+        .adult {
+            padding-left: 30px;
+        }
+
+        .room {
+            padding-left: 30px;
+        }
+
+        .press {
+            padding-left: 30px;
+        }
+
+        .services {
+            /* border: 2px solid green; */
+            margin-top: 55px;
+            height: 330px;
+        }
+
+        .service1 {
+            text-align: center;
+            font-size: 65px;
+            font-weight: 500;
+            font-family: 'Old Standard TT', serif;
+        }
+
+        .ser {
+            display: flex;
+            margin-left: 70px;
+            margin-right: 70px;
+            justify-content: space-evenly;
+            margin-top: 27px;
+        }
+
+
+        .service {
+            /* border: 2px solid red; */
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+            width: 160px;
+            height: 154px;
+        }
+
+        .service img {
+            height: 100px;
+            margin-top: 16px;
+            display: block;
+            margin: auto;
+        }
+
+        .service p {
+            text-align: center;
+        }
+
+        .hotelroom {
+            /* border: 2px solid red; */
+            height: 450px;
+            border-top: 1px solid black;
+        }
+
+        .kamra {
+            text-align: center;
+            font-weight: 500;
+            font-size: 45px;
+            font-family: 'Old Standard TT', serif;
+        }
+
+        .roomtype {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            font-family: 'Nunito Sans', sans-serif;
+            color: #c5a880;
+        }
+
+        .roomtype img {
+            height: 250px;
+            width: auto;
+            display: block;
+            margin-top: 50px;
+
+        }
+
+        .roomtype h3 {
+            text-align: center;
+            font-weight: 500;
+            font-size: 22px;
+            text-transform: uppercase;
+            font-family: 'Old Standard TT', serif;
+        }
+
+        /* .roomtype section:hover{
+            background-color: black;
+            color: white;
+        } */
+        .roomtype section a{
+            color: black;
+        }
+
+        .roomtype section a:hover {
+            color: white;
+            border: 0px solid black;
+            background-color: black;
+            cursor: pointer;
+        }
+
+        .foot{
+            background-color: black;
+            height: 140px;
+        }
+
+        .foot p{
+            color: white;
+        }
+
+        .picture{
+            display: flex;
+            justify-content: center;
+            /* margin-top: 33px; */
+        }
+        .image{
+            display: inline-block;
+            /* flex-direction: row; */
+        }
+        .image img{
+            height: 50px;
+            width: auto;
+            margin: 10pt;        
+        }
+
+        .para{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="left">
+            <a href="index.html">
+                Seaside
+                <small>Hotel Booking</small>
+            </a>
+        </div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul type="none">
+                    <li><a href="#" class="Active">Home</a></li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#">Resto & Bar</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <!-- <div class="right">
+            <a href="#">LET'S CHAT</a>
+        </div> -->
+
+    </header>
+
+    <div class="container">
+        The Vaccation Heaven
+        <small>Stay with us & relax</small>
+    </div>
+
+    <div class="head">
+
+        <div class="input1">
+            <form>
+                check-in<br>
+                <input type="date" style="background: transparent; border: none;">
+            </form>
+        </div>
+        <div class="input2">
+            <form>
+                check-out<br>
+                <input type="date" style="background: transparent; border: none;">
+            </form>
+        </div>
+        <div class="room">
+            <form>
+                Rooms <br>
+                <select name="kamre" id="" style="border: none;">
+                    <option value="">Suite</option>
+                    <option value="">Family Room</option>
+                    <option value="">Classic Room</option>
+                    <option value="">Superior Room</option>
+                    <option value="">Luxury Room</option>
+
+                </select>
+            </form>
+        </div>
+        <div class="adult">
+            <form>
+                Guests <br>
+                <select name="person" id="people" style="border: none;">
+                    <option value="">1 perosn</option>
+                    <option value="">2 perosn</option>
+                    <option value="">3 perosn</option>
+                    <option value="">4 perosn</option>
+                    <option value="">5 perosn</option>
+                    <option value="">6-9 perosn</option>
+                    <option value="">10+ perosn</option>
+                </select>
+            </form>
+        </div>
+        <div class="press">
+            <form>
+                <input type="button" value="check availability">
+            </form>
+        </div>
+    </div>
+
+    <div class="services">
+        <div class="service1">
+            Explore Our Hotel Services
+        </div>
+        <div class="ser">
+            <div class="service" id="service1">
+                <section>
+                    <img src="img/wifi-logo.png" alt="">
+                    <p>Free Wifi</p>
+                </section>
+            </div>
+
+            <div class="service" id="service 2">
+                <section>
+                    <img src="img/res.png" alt="">
+                    <p>Restaurant</p>
+                </section>
+            </div>
+            <div class="service" id="service 3">
+                <img src="img/pool.jpg" alt="">
+                <p>Swimming Pool</p>
+            </div>
+            <div class="service" id="service 4">
+                <img src="img/service.jpg" alt="">
+                <p>Help & Support</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="hotelroom">
+        <div class="kamra">
+            Our Rooms
+        </div>
+        <div class="roomtype">
+            <section>
+                <img src="img/suite.jpg" alt="">
+                <h3>Suite</h3>
+                $150.00 / night
+                <a href="" class="kamre"
+                    style="margin-left:25px; text-decoration: none; border: 1px solid rgba(220, 35, 35, 0.1); border-radius: 5px; text-transform: uppercase; font-size: 13px;font-weight: 700;padding: 5px 10px;">Book
+                    now</a>
+            </section>
+
+            <section>
+                <img src="img/family.jpg" alt="">
+                <h3>Family Room</h3>
+                $200.00 / night
+                <a href="" class="kamre"
+                    style="margin-left:25px; text-decoration: none; border: 1px solid rgba(220, 35, 35, 0.1); border-radius: 5px; text-transform: uppercase; font-size: 13px;font-weight: 700;padding: 5px 10px;">Book
+                    now</a>
+            </section>
+
+            <section>
+                <img src="img/luxury.jpg" alt="">
+                <h3>Luxury room</h3>
+                $350.00 / night
+                <a href="" class="kamre"
+                    style="margin-left:25px; text-decoration: none; border: 1px solid rgba(220, 35, 35, 0.1); border-radius: 5px; text-transform: uppercase; font-size: 13px;font-weight: 700;padding: 5px 10px;">Book
+                    now</a>
+            </section>
+        </div>
+    </div>
+
+    <footer class="foot">
+        <div class="picture">
+            <div class="image">
+                <a href="" style="cursor: pointer;"><img src="img/instagram.png" alt=""></a>
+            </div>
+        
+            <div class="image">
+                <a href="" style="cursor: pointer;"><img src="img/fb.png" alt=""></a>
+            </div>
+
+            <div class="image">
+                <a href="" style="cursor: pointer;"><img src="img/twitter.png" alt=""></a>
+            </div>
+        </div>
+        <div class="para">
+            <p>© 2022 Booking PVT. LTD <br>
+            <small>Country INDIA USA UAE</small>
+            </p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
